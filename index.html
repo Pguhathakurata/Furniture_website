@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furniture Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- --------------------------------------------------------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- --------------------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- --------------------------------------- -->
+      
+
+    </head>
+    <body>
+        <div class="header bg-sky-100 sticky top-0 z-4">
+            <div class="container">
+                <div class="row flex justify-between flex-wrap">
+                    <div class="left flex justify-between bg-orange-600 gap-4 items-center text-white cursor-pointer" onclick="alert('open overlay')">
+                        <i class="fa-solid fa-bars"></i>
+                        <p>Category</p>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <!-- -------------------------- -->
+                     <div class="middle hidden md:block ">
+                        <ul class="flex gap-10 flex-wrap flex-col md:flex-row">
+                            <li><a href="#" class="hover:text-orange-500 hover:bg-[#456a6a] px-5">Home</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="#" class="hover:text-orange-500 hover:bg-[#456a6a] px-5">Featured</a> <i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="#" class="hover:text-orange-500 hover:bg-[#456a6a] px-5">Shop</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="#" class="hover:text-orange-500 hover:bg-[#456a6a] px-5">Blog</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="#about" class="hover:text-orange-500 hover:bg-[#456a6a] px-5">About</a></li>
+                            <li><a href="#" class="hover:text-orange-500 hover:bg-[#456a6a] px-5">Contact</a></li>
+                        </ul>
+                     </div>
+                     <!-- ---------------------------------------------------- -->
+                     <div class="right flex gap-4">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------- -->
+
+        <div class="banner bg-orange-100 ">
+            <div class="container">
+                <div class="row flex justify-between items-center h-full flex-wrap ">
+                    <section class="text py-10 mb-10 md:mb-0">
+                        <h1 class="heading">Best Design of
+                            Furniture Collection</h1>
+                            <p class="para font-sm/7 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda error quisquam aperiam exercitationem ullam rem, a fuga quos ad tempora amet, voluptatibus aliquam, consequuntur dolorem. Itaque earum deleniti voluptatibus.</p>
+                            <button class="button">SHOP NOW</button>
+                    </section>
+                    <div class="image relative">
+                        <div class="circle"></div>
+                            <img src="asset/Layer 1.png" alt="image" class="relative ">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ---------------------------------top brands---------------------------- -->
+         <div class="products py-[48px]">
+            <div class="container">
+                <h1 class="heading text-center">Top New Products</h1>
+                <p class="para text-center ">Praesent ut ligula non mi curabitur at lacus elit</p>
+                <div class="line"></div>
+                <div class="row grid md:grid-cols-4 gap-4 py-10 grid-cols-1">
+                    <div class="card">
+                        <div class="image relative">
+                            <img src="asset/IMG(1).png" alt="image1">
+                            <span class="absolute top-0 right-0 bg-orange-600 p-4">sale</span>
+                        </div>
+                        <div class="card-text">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-gray-200">(0 Reviews)</span>
+                            <p class="para">Decor For Drawing</p>
+                            <div class="prize">
+                                <span class="text-gray-400">
+                                    $ 50.00
+                                </span>
+                                <span class="text-orange-600 ">$ 35.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image relative">
+                            <img src="asset/IMG(2).png" alt="image1">
+                            <span class="absolute top-0 right-0 bg-orange-600 p-4">sale</span>
+                        </div>
+                        <div class="card-text">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-gray-200">(0 Reviews)</span>
+                            <p class="para">Decor For Drawing</p>
+                            <div class="prize">
+                                <span class="text-gray-400">
+                                    $ 50.00
+                                </span>
+                                <span class="text-orange-600 ">$ 35.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image relative">
+                            <img src="asset/IMG(3).png" alt="image1">
+                            <span class="absolute top-0 right-0 bg-orange-600 p-4">sale</span>
+                        </div>
+                        <div class="card-text">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-gray-200">(0 Reviews)</span>
+                            <p class="para">Decor For Drawing</p>
+                            <div class="prize">
+                                <span class="text-gray-400">
+                                    $ 50.00
+                                </span>
+                                <span class="text-orange-600 ">$ 35.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image relative">
+                            <img src="asset/IMG(1).png" alt="image1">
+                            <span class="absolute top-0 right-0 bg-orange-600 p-4">sale</span>
+                        </div>
+                        <div class="card-text">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-gray-200">(0 Reviews)</span>
+                            <p class="para">Decor For Drawing</p>
+                            <div class="prize">
+                                <span class="text-gray-400">
+                                    $ 50.00
+                                </span>
+                                <span class="text-orange-600 ">$ 35.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+         </div>
+
+         <!-- ---------------------------------- -->
+
+         <div class="grid-section py-10">
+            <div class="container">
+                <div class="grid-parent grid md:grid-cols-4 grid-rows-2 gap-4">
+                    <div class="item col-span-2">
+                        <span>Company Name</span>
+                        <img src="./asset/1.png" alt="one">
+                    </div>
+                    <div class="item">
+                        <span>Company Name</span>
+                        <img src="./asset/4.png" alt="one">
+                    </div>
+                    <div class="item">
+                        <span>Company Name</span>
+                        <img src="./asset/5.png" alt="one">
+                    </div>
+                    <div class="item">
+                        <span>Company Name</span>
+                        <img src="./asset/3.png" alt="one">
+                    </div>
+                    <div class="item">
+                        <span>Company Name</span>
+                        <img src="./asset/4(1).png" alt="one">
+                    </div>
+                    <div class="item col-span-2">
+                        <span>Company Name</span>
+                        <img src="./asset/1.png" alt="one">
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- --------------------------------------------------------------- -->
+        <div class="modern bg-orange-400" id="about">
+            
+                <div class="row flex flex-wrap">
+
+                    <div class="image">
+                        <img src="asset/IMG(4).png" alt="" class="min-w-[300px]" >
+                    </div>
+                    <div class="text text-white p-10">
+                        <h1 class="text-[34px] font-bold">Modernliving quarters</h1>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            in maximus odio eu elementum fringilla, Mauris sodales 
+                            vel ipsum a laoreet.
+
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            in maximus odio eu elementum fringilla, Mauris sodales 
+                            vel ipsum a laoreet</p>
+
+                    </div>
+                </div>
+          
+        </div>
+        <!-- ------------------------------------------------ -->
+         <div class="news bg-gray-100 py-10">
+            <div class="container">
+              
+
+                 
+                <div class="row">
+                    <h1 class="heading text-center">Latest News</h1>
+                    <p class="text-gray-400 text-center">Praesent ut ligula non mi curabitur at lacus elit</p>
+                    <div class="line"></div>
+                </div>
+                <div class="card-section flex">
+                <input type="radio" name="control" id="dot1">
+               
+                <input type="radio" name="control" id="dot2">
+                
+                <input type="radio" name="control" id="dot3">
+                    <div class="card-group">
+                <div class="row flex justify-center gap-4 card-wrapper">
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+        
+                </div>
+
+                <div class="row flex gap-4 card-wrapper justify-center">
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+        
+                </div>
+
+                <div class="row flex gap-4 card-wrapper justify-center">
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+                    <div class="card bg-white pb-6">
+                        <div class="image relative">
+                            <img src="./asset/bg-breadcrumb-1.png" alt="image">
+                            <img src="./asset/Layer 1(1).png" alt="profile">
+                        </div>
+                        <p class="text-xl font-medium text-gray-400 pt-10 pb-6 px-6">Posted May  9, 2020</p>
+                        <h3 class="text-[24px] px-6">HERE WILL YOUR TITLE</h3>
+                        <p class="px-6">Lorem ipsum is simply dummy text of the
+                            printing and typese....</p>
+                        <div class="line"></div>
+                        <a href="#" class="text-orange-300 text-xl text-bold px-6">Read More</a>
+                    </div>
+        
+                </div>
+                    </div>
+                </div>
+
+
+                <div class="control">
+                    <label for="dot1"></label>
+                    <label for="dot2"></label>
+                    <label for="dot3"></label>
+                </div>
+                </div>
+
+
+            </div>
+         </div>
+<!-- ----------------------------------------------------------------- -->
+ <div class="letter bg-gray-200 py-10">
+    <div class="container">
+        <div class="row">
+            <h1 class="heading text-center">Newletter</h1>
+            <p class="text-xl/8 text-center text-gray-500">Praesent ut ligula non mi curabitur at lacus elit</p>
+            <div class="line"></div>
+            <div class="input">
+                <input type="email" name="email" id="email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ---------------------------------------------------------------------- -->
+<footer class="footer bg-orange-200 py-6 ">
+    <div class="container">
+        <div class="row flex flex-wrap md:flex-nowrap gap-4 ">
+            <div class="col-1 max-w-[300px]">
+                <img src="asset/Logo.png" alt="logo" srcset="" class="logo">
+                <p class="text-md/7 my-4">Lorem ipsum dolor sit amet, consectetur adipisicing e
+                lit. Velit ducimus voluptatibus neque illo id repellat 
+                quisquam? Autem expedita earum quae laborum 
+                ipsum ad.</p>
+                    <div>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </div>
+            </div>
+            <div class="col-2 max-w-[300px]">
+                <h3>Contact us</h3>
+                <a href="#">1203, Dhanmondi, Drive FL 3344
+                            Bangladesh, Dhaka</a>
+                    <a href="tel:+0123 456 789">Phone: 0123 456 789</a>
+                    <a href="mailto:Info@example.com">Email: Info@example.com</a>
+            </div>
+            <div class="col-3">
+                <h3>Recent Post</h3>
+                <a href="#">Best caring doctors</a>
+                <a href="#">The blood sample</a>
+                <a href="#">The ent soecialist</a>
+            </div>
+            <div class="col-4">
+                <h3>Our Portfolio</h3>
+                <a href="#">Plaster machine
+</a>
+                <a href="#">Celsius Meter</a>
+                <a href="#">Pedometer</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </body>
+</html>
